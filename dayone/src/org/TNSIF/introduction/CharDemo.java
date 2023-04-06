@@ -5,7 +5,7 @@ public class CharDemo {
 	public static void main(String[] args) {
 		char ch='a';
 		System.out.println(ch);
-		//assigning num to ASCI
+		//assigning num to ASCII
 		char ch1=70;
 		System.out.println(ch1);
 		// assigning unicode to char
