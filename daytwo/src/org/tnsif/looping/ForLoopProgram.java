@@ -13,6 +13,7 @@ public class ForLoopProgram {
 			System.out.print(i+" ");
 			
 		}
+		s.close();
 
 	}
 

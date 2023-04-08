@@ -2,6 +2,7 @@ package org.tnsif.looping;
 
 public class LabelledForLoop {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		outer:
 			for(int i =1;i<=5;i++)
@@ -20,5 +21,6 @@ public class LabelledForLoop {
 			}
 
 	}
+	
 
 }
