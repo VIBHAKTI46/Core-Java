@@ -1,6 +1,4 @@
-package org.tnsif.classobject;
-
-import org.tnsif.encapsulation.HDFCBank;
+package org.tnsif.encapsulation;
 
 public class EncapsulationDemo {
 	public static void main(String[] args) {
@@ -10,8 +8,7 @@ public class EncapsulationDemo {
 		h.setCardtype("Credit");
 		h.setCvvno(4444);
 		h.setPinno(1001);
-		//getter
-
+		//getter is used to return value
 		System.out.println(h.getCardno());
 		System.out.println(h.getCardtype());
 		System.out.println(h.getCvvno());

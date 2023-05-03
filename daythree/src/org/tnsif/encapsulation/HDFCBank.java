@@ -1,12 +1,14 @@
+//program to demonstrate Encapsulation
 package org.tnsif.encapsulation;
 
 public class HDFCBank {
 
-
+//private data members
 		private Long cardno;
 		private String cardtype;
 		private int cvvno;
 		private int pinno;
+		//getter and setter
 		public Long getCardno() {
 			return cardno;
 		}
@@ -19,6 +21,7 @@ public class HDFCBank {
 		public void setCardtype(String cardtype) {
 			this.cardtype = cardtype;
 		}
+		
 		public int getCvvno() {
 			return cvvno;
 		}

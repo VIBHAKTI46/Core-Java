@@ -1,4 +1,4 @@
-//program on demostrate on class object constructor 
+// demonstrate class and object 
 package org.tnsif.classobject;
 public class Customer {
 	//private data member 
@@ -7,14 +7,14 @@ public class Customer {
 	private String city ;
 	
 	//constructor does not have any return type
-	//it is same as classname follwed by '()'
+	//it is same as class name followed by '()'
 	//default constructor 
 	public Customer() {
 		super();
 		
 	}
 	
-	//parametrized constructor 
+	//parameterized constructor 
 	public Customer(int cunstomerid, String customername, String city) {
 		super();
 		this.cunstomerid = cunstomerid;
