@@ -4,7 +4,7 @@ public class LabelledForLoop {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		outer:
+		outer://recommended to use with jumping statement
 			for(int i =1;i<=5;i++)
 			{
 				System.out.println();
@@ -12,11 +12,12 @@ public class LabelledForLoop {
 				inner:
 					for(int j =1;j<=5;j++)
 					{
-					System.out.print(j+" ");
-					if(j==4)
+					
+					if(j==2)
 						//it terminates
-						break;
+						continue;
 					//continue skip the statement 
+					System.out.print(j+" ");
 					}
 			}
 

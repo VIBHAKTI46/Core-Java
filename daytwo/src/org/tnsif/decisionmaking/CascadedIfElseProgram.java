@@ -8,10 +8,10 @@ public class CascadedIfElseProgram {
 		float per1=s.nextFloat();
 		float per2=s.nextFloat();
 		float per3=s.nextFloat();
-		if(per1>per2&&per1>per3) {
+		if(per1>=per2&&per1>=per3) {
 			System.out.println("Person1 has highest percentage");
 		}
-		else if(per2>per1&&per2>per3) {
+		else if(per2>=per1&&per2>=per3) {
 			System.out.println("Person2 has highest percentage");
 		}
 		else {

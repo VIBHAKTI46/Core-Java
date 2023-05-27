@@ -1,6 +1,6 @@
 package org.tnsif.looping;
 
-public class EnhancedForLoop {
+public class EnhancedForLoop {//use for collection/array
 
 	public static void main(String[] args) {
 		char array1[]= {'A','B','C'};
@@ -8,8 +8,6 @@ public class EnhancedForLoop {
 		{
 			System.out.println(itr+"");
 		}
-
-
 	}
 
 }
