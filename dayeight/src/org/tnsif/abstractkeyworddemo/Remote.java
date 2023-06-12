@@ -1,23 +1,36 @@
-//program to demonstrate on abstract class and abstract method
+//program on abstract class and abstract method 
 package org.tnsif.abstractkeyworddemo;
-/* if any class contain atleast one abstract  method then that class 
- * must be declare an abstract class*/
- 
 public abstract class Remote {
-	public String  cellName;
-	//abstract method
-	abstract void functionRemote();
-	//concrete method
-	public void  display() {
-		System.out.print("cell name is :"+cellName);
+	//if any class declare as a abstract then that class must contain one abstract method 
+	
+	public String name;
+	//abstract class can have contain abstract and non abstract method
+	//abstract method 
+	abstract void functionremote();
+	abstract void create();
+	
+	void display()
+	{
+		System.out.println("cell name  " +name);
 	}
- 
-
+	
 }
-//
+
+//implementable class
 class RemoteChild extends Remote
 {
-	void functionRemote() {
-		System.out.println("Abstract method is implemented");
+	@Override 
+	void functionremote()
+	{
+		
+	System.out.println("Abstact method");
 	}
+	@Override 
+	void create ()
+	{
+		
+	System.out.println("Abstact method 2");
+	}
+
+	
 }

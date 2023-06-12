@@ -9,11 +9,11 @@ ATMMachine al=new ATMMAchineChild();
    al.withdraw();
    ReceipeImplementable r=new ReceipeImplementable();
    r.setName("C2TC Program");
-   System.out.println(r.displayName());
+   System.out.println(r.displayname());
    
    NestedInterfaceExample n=new NestedInterfaceExample();
-   n.setStr1("Nia");
-   n.setStr2(" Deshmukh");
+   n.setStr1("Vibhakti");
+   n.setStr2(" Patil");
    System.out.println(n.concatenate());
 	}
 

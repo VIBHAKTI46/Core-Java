@@ -4,8 +4,9 @@ public class AbstractExecutor {
 public static void main(String args) {
 	
 	RemoteChild r =new RemoteChild();
-	r.cellName ="DuroCell";
+	r.name = "durocell";
 	r.display();
-	r.functionRemote();
+	r.functionremote();
+	r.create();
 }
 }
