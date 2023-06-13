@@ -1,25 +1,22 @@
 package org.tnsif.junit;
-import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-class ParameterizedTest {
+class parametrizeddemo {
 
-	/* to perform parameterized test
-	 * 
-	 */
 	@ParameterizedTest
-	@ValueSource(strings= {"vibhakti","Ankit"})
-	
+	@ValueSource(strings= {"vibhakti","patil"})
 	void test() {
-		System.out.println("Demonstration on parameterized"+"Test");
+		System.out.println("paramertized ");
 	}
-@ParamerizedTest
-@ValueSource(strings= {"abc", "XYZ"})
-
+	
+	@ParameterizedTest
+	@ValueSource(strings= {"vibhakti","patil"})
 	void accept(String str) {
 		assertNotNull(str);
 	}
-}
 
+}
