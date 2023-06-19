@@ -11,12 +11,13 @@ public abstract class BankAcc {
 		this.accNm = accNm;
 		this.accBal = accBal;
 	}
-
+//abstract  method
 	abstract public void withdraw(float accBal);
-	public void deposite(float accBal) {
+	public void deposite(float accBal)
+	{
 		System.out.println(accBal);
 	}
-	@Override
+	@Override//tostring method
 	public String toString() {
 		return "BankAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
 	}

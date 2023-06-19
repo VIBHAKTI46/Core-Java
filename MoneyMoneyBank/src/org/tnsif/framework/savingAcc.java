@@ -1,20 +1,26 @@
 package org.tnsif.framework;
 
-public abstract class savingAcc extends BankAcc{
-	//private field
+public abstract class savingAcc extends BankAcc {
 	private boolean isSalaried;
-	static final private float MINBAL = 0.0f;
-	//constructor
+	static final private float MINBAL=100.0f;
+
 	public savingAcc(int accNo, String accNm, float accBal, boolean isSalaried) {
 		super(accNo, accNm, accBal);
 		this.isSalaried = isSalaried;
 	}
-	public void withdraw(float accBal) {
-		System.out.println("Account No: " + this.getAccNo() + " Account Name: " + this.getAccNm() + " Account Balance: " + (this.getAccBal()+ MINBAL));
+	
+	public void withdraw(float amount) {
+		if(amount > MINBAL) {
+			System.out.println("Balance Before Withdrawal: "+this.getAccBal());
+			this.setAccBal(getAccBal()-amount);
+			System.out.println("Account No: "+this.getAccNo()+", Account Name: "+this.getAccNm()+", Account Balance: "+this.getAccBal()+", Withdraw Amount:"+amount);
+		} else {
+			System.out.println("Cannot Withdraw Minimum balance required is:"+ MINBAL);
+		}
 	}
+
 	@Override
 	public String toString() {
-		return "savingAcc [isSalaried=" + isSalaried + "]";
+		return "SavingAcc [isSalaried=" + isSalaried + "]";
 	}
-	
 }

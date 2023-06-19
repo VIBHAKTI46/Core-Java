@@ -7,7 +7,7 @@ public class MMSavingAcc extends savingAcc{
 
 	@Override
 	public String toString() {
-		return "MMSavingAcc [toString()=" + super.toString() + "]";
+		return  super.toString() + "]";
 	}
 
 	
